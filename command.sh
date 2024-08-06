@@ -1,0 +1,13 @@
+npx create-react-app my_app
+cd my_app
+gh repo create my_app --public
+git remote add origin https://github.com/WilliamsNimi/my_app
+git push -u origin master
+git checkout update_logo
+git add .
+git commit -m "Logo Changes"
+git push -u origin update_logo
+gh pr create --base master --head update_logo
+git checkout master
+gh pr merge
+# REPO_URL https://github.com/WilliamsNimi/my_app.git
