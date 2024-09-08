@@ -1,6 +1,6 @@
 npx create-react-app my_app
 cd my_app
-git auth login
+gh auth login
 gh repo create my_app --public
 git remote add origin https://github.com/WilliamsNimi/my_app
 git push -u origin master
